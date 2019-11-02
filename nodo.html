@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proyecto de Grado - Terradas, Matias</title>
+
+<!-- Global stylesheets -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+<link href="assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+<!-- /global stylesheets -->
+<!-- Core JS files -->
+<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+<script type="text/javascript" src="assets/js/core/app.js"></script>
+<script type="text/javascript" src="assets/js/plugins/notifications/sweet_alert.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/velocity/velocity.ui.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
+
+<script type="text/javascript" src="assets/js/plugins/ui/ripple.min.js"></script>
+<!-- /theme JS files -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.1.0/echarts-en.js"></script>
+
+
+</head>
+<body>
+
+<!-- Main navbar -->
+<div class="navbar navbar-default header-highlight">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">PORYECTO DE GRADO</a>
+
+        <ul class="nav navbar-nav visible-xs-block">
+            <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+            <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-mobile">
+        <ul class="nav navbar-nav">
+            <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+
+
+            <li class="dropdown dropdown-user">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                    <img src="assets/images/image.png" alt="">
+                    <span>Admin</span>
+                    <i class="caret"></i>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#"><i class="icon-user-plus"></i> Mi perfil</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="icon-switch2"></i> Salir</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- /main navbar -->
+
+
+<!-- Page container -->
+<div class="page-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-main">
+            <div class="sidebar-content">
+
+
+                <!-- Main navigation -->
+                <div class="sidebar-category sidebar-category-visible">
+                    <div class="category-content no-padding">
+                        <ul class="navigation navigation-main navigation-accordion">
+
+                            <!-- Main -->
+                            <li class="navigation-header"><span>Menu</span> <i class="icon-menu" title="Main pages"></i></li>
+                            <li class="active"><a href="index.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+                            <li>
+                                <a href="#"><i class="icon-stack"></i> <span>Gateways</span></a>
+                                <ul>
+                                    <li><a href="gateways.html">Datos</a></li>
+                                    <li>
+                                        <a href="#">Lista</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-stack"></i> <span>Nodos</span></a>
+                                <ul>
+                                    <li><a href="2_col.html">Nodo</a></li>
+                                    <li>
+                                        <a href="#">3 columns</a>
+                                        <ul>
+                                            <li><a href="3_col_dual.html">Dual sidebars</a></li>
+                                            <li><a href="3_col_double.html">Double sidebars</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <!-- /main -->
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- /main navigation -->
+
+            </div>
+        </div>
+        <!-- /main sidebar -->
+
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Page header -->
+            <div class="page-header">
+                <div class="page-header-content">
+                    <div class="page-title">
+                        <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold" span id="nombre-sensor">Nodo Sensor</span> - Nodo Sensor</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- /page header -->
+
+
+            <!-- Content area -->
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="panel panel-flat border-top-success border-top-xlg">
+                            <div class="panel-heading">
+                                <h1>Ultima Actualización</h1>
+                                <div class="heading-elements">
+                                    <ul class="icons-list">
+                                        <li><a data-action="collapse"></a></li>
+                                        <li><a data-action="reload"></a></li>
+                                        <li><a data-action="close"></a></li>
+                                    </ul>
+                                </div>
+                            </div>  
+                            <div class="panel-body">
+                                <p><h3 class="panel-title"><i class="icon-calendar2"></i> <span id="fecha_ultimo"></span> <i class="icon-alarm" style="margin-left:10px;"></i> <span id="hora_ultimo"></span></h3></p>
+                                <div class="chart-container">
+                                    <div class="chart has-fixed-height" id="co_level"></div>
+                                    <div class="row" style="margin-left: 25px;">
+                                        <div class="col-md-4"><h1  style="font-size: 3em;"><i class="glyphicon glyphicon-dashboard"  style="font-size: 2em;"></i><p id="co"></p>CO</h1></div>
+                                        <div class="col-md-4"><h1  style="font-size: 3em;"><i class="icon-meter-slow" style="font-size: 2em;"></i><p id="tc"></p>TC</h1></div>
+                                        <div class="col-md-4"><h1  style="font-size: 3em;"><i class="glyphicon  glyphicon-tint" style="font-size: 2em;"></i><p id="humedad"></p>HU</h1></div>
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+                        <div class="panel panel-flat border-top-success border-top-xlg">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">Nodo<a class="heading-elements-toggle"><i class="icon-more"></i></a></h2>
+                                <div class="heading-elements">
+                                    <ul class="icons-list">
+                                        <li><a data-action="collapse"></a></li>
+                                        <li><a data-action="reload"></a></li>
+                                        <li><a data-action="close"></a></li>
+                                    </ul>
+                                </div>
+                            </div> 
+                            <div class="panel-body">
+                                    <div class="row mt-5 pl-10 pr-10" id="map" style="min-height: 400px;">
+                                            <p>Loading map...</p>
+                                    </div>
+                            </div>            
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="panel panel-flat border-top-success border-top-xlg">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">En las ultimas 24hs<a class="heading-elements-toggle"><i class="icon-more"></i></a></h2>
+                                <div class="heading-elements">
+                                    <ul class="icons-list">
+                                        <li><a data-action="collapse"></a></li>
+                                        <li><a data-action="reload"></a></li>
+                                        <li><a data-action="close"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-body" style="text-align: center;">
+                                <h1>CO Promedio en las ultimas 8hs <span id="promedio8hs"></span></h1>
+                                    <div class="chart-container">
+                                            <div class="chart has-fixed-height" id="co_24level"></div>
+                                    </div>
+                            </div>          
+                        </div>                        
+                    </div>
+                    <div class="col-md-8">
+                        <div class="panel panel-flat border-top-success border-top-xlg">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">CO durante la ultima Semana<a class="heading-elements-toggle"><i class="icon-more"></i></a></h2>
+                                <div class="heading-elements">
+                                    <ul class="icons-list">
+                                        <li><a data-action="collapse"></a></li>
+                                        <li><a data-action="reload"></a></li>
+                                        <li><a data-action="close"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-body" style="text-align: center;">
+                                <h1>CO Promedio en las ultimas 8hs <span id="promedio8hs"></span></h1>
+                                    <div class="chart-container">
+                                            <div class="chart has-fixed-height" id="co_semanal"></div>
+                                    </div>
+                            </div>          
+                        </div>
+                        <div class="panel panel-flat border-top-success border-top-xlg">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">Temperatura durante la ultima Semana<a class="heading-elements-toggle"><i class="icon-more"></i></a></h2>
+                                <div class="heading-elements">
+                                    <ul class="icons-list">
+                                        <li><a data-action="collapse"></a></li>
+                                        <li><a data-action="reload"></a></li>
+                                        <li><a data-action="close"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-body" style="text-align: center;">
+                                <h1>CO Promedio en las ultimas 8hs <span id="promedio8hs"></span></h1>
+                                    <div class="chart-container">
+                                            <div class="chart has-fixed-height" id="tc_semanal"></div>
+                                    </div>
+                            </div>          
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                       
+                    </div>
+                </div>
+
+
+
+                <!-- Footer -->
+                <div class="footer text-muted">
+
+                </div>
+                <!-- /footer -->
+
+            </div>
+            <!-- /content area -->
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</div>
+<!-- /page container -->
+<script src="assets/js/nodo.js" type="text/javascript"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG-c3CeNHxRcRYlQI0jWwuDJSIZHgDWqM&callback=initMap" type="text/javascript"></script>
+
+
+</body>
+</html>
