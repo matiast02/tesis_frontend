@@ -1,359 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Proyecto de Grado - Terradas, Matias</title>
 
     <!-- Global stylesheets -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
-    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/core.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/components.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/icons/icomoon/styles.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/icons/fontawesome/styles.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/colors.css" rel="stylesheet" type="text/css" />
     <!-- /global stylesheets -->
     <!-- Core JS files -->
-    <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/js/core/libraries/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/core/libraries/bootstrap.min.js"
+    ></script>
     <!-- /core JS files -->
 
     <!-- Theme JS files -->
     <script type="text/javascript" src="assets/js/core/app.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/notifications/sweet_alert.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/velocity/velocity.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/velocity/velocity.ui.min.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/js/plugins/notifications/sweet_alert.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/plugins/velocity/velocity.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/plugins/velocity/velocity.ui.min.js"
+    ></script>
 
-    <script type="text/javascript" src="assets/js/plugins/ui/ripple.min.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/js/plugins/ui/ripple.min.js"
+    ></script>
     <!-- /theme JS files -->
+  </head>
 
-</head>
+  <body>
+    <!-- Main navbar -->
+    <div class="navbar navbar-default header-highlight" id="main-navbar"></div>
+    <!-- /main navbar -->
 
-<body>
-
-<!-- Main navbar -->
-<div class="navbar navbar-default header-highlight">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">PORYECTO DE GRADO</a>
-    
-            <ul class="nav navbar-nav visible-xs-block">
-                <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
-                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
-            </ul>
-        </div>
-    
-        <div class="navbar-collapse collapse" id="navbar-mobile">
-            <ul class="nav navbar-nav">
-                <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
-            </ul>
-    
-            <ul class="nav navbar-nav navbar-right">
-    
-    
-                <li class="dropdown dropdown-user">
-                    <a class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="assets/images/image.png" alt="">
-                        <span>Admin</span>
-                        <i class="caret"></i>
-                    </a>
-    
-                    <ul class="dropdown-menu dropdown-menu-right">
-                        <li><a href="#"><i class="icon-user-plus"></i> Mi perfil</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i class="icon-switch2"></i> Salir</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-<!-- /main navbar -->
-
-
-<!-- Page container -->
-<div class="page-container">
-
-    <!-- Page content -->
-    <div class="page-content">
-
+    <!-- Page container -->
+    <div class="page-container">
+      <!-- Page content -->
+      <div class="page-content">
         <!-- Main sidebar -->
-        <div class="sidebar sidebar-main">
-            <div class="sidebar-content">
-
-
-                <!-- Main navigation -->
-                <div class="sidebar-category sidebar-category-visible">
-                    <div class="category-content no-padding">
-                        <ul class="navigation navigation-main navigation-accordion">
-
-                            <!-- Main -->
-                            <li class="navigation-header"><span>Menu</span> <i class="icon-menu" title="Main pages"></i></li>
-                            <li class="active"><a href="index.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
-                            <li>
-                                <a href="#"><i class="icon-stack"></i> <span>Gateways</span></a>
-                                <ul>
-                                    <li><a href="gateways.html">Datos</a></li>
-                                    <li>
-                                        <a href="#">Lista</a>
-                                    </li>
-
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icon-stack"></i> <span>Nodos</span></a>
-                                <ul>
-                                    <li><a href="2_col.html">Nodo</a></li>
-                                    <li>
-                                        <a href="#">3 columns</a>
-                                        <ul>
-                                            <li><a href="3_col_dual.html">Dual sidebars</a></li>
-                                            <li><a href="3_col_double.html">Double sidebars</a></li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
-                            </li>
-                            <!-- /main -->
-
-                        </ul>
-                    </div>
-                </div>
-                <!-- /main navigation -->
-
-            </div>
-        </div>
+        <div class="sidebar sidebar-main" id="main-sidebar"></div>
         <!-- /main sidebar -->
-
 
         <!-- Main content -->
         <div class="content-wrapper">
-
-            <!-- Page header -->
-            <div class="page-header">
-                <div class="page-header-content">
-                    <div class="page-title">
-                        <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Dashboard</span> - Información General</h4>
-                    </div>
-                </div>
+          <!-- Page header -->
+          <div class="page-header">
+            <div class="page-header-content">
+              <div class="page-title">
+                <h4>
+                  <i class="icon-arrow-left52 position-left"></i>
+                  <span class="text-semibold">Dashboard</span> - Información
+                  General
+                </h4>
+              </div>
             </div>
-            <!-- /page header -->
+          </div>
+          <!-- /page header -->
 
-
-            <!-- Content area -->
-            <div class="content">
-                <div class="row">
-                    <div class="col-md-4">
-
-                        <!-- Available hours -->
-                        <div class="panel text-center">
-                            <div class="panel-body">
-                                <div class="heading-elements">
-                                    <ul class="icons-list">
-                                        <li class="dropdown text-muted">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-cog3"></i> <span class="caret"></span></a>
-                                            <ul class="dropdown-menu dropdown-menu-right">
-                                                <li><a href="#"><i class="icon-sync"></i> Update data</a></li>
-                                                <li><a href="#"><i class="icon-list-unordered"></i> Detailed log</a></li>
-                                                <li><a href="#"><i class="icon-pie5"></i> Statistics</a></li>
-                                                <li><a href="#"><i class="icon-cross3"></i> Clear list</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!-- Progress counter -->
-                                <div class="content-group-sm svg-center position-relative" id="hours-available-progress">
-                                    <svg width="76" height="76"></svg>
-                                       <h2 class="mt-15 mb-5" id="count-gateways">2</h2>
-                                        <i class="fa fa-cloud text-blue-400 counter-icon" style="top: 28px"></i>
-                                        <div>Gateways</div>
-                                    <div class="text-size-small text-muted"></div>
-                                </div>
-                                <!-- /progress counter -->
-
-                            </div>
-                        </div>
-                        <!-- /available hours -->
-
+          <!-- Content area -->
+          <div class="content">
+            <div class="row">
+              <div class="col-md-4">
+                <!-- Available hours -->
+                <div class="panel text-center">
+                  <div class="panel-body">
+                    <!-- Progress counter -->
+                    <div
+                      class="content-group-sm svg-center position-relative"
+                      id="hours-available-progress"
+                    >
+                      <svg width="76" height="76"></svg>
+                      <h2 class="mt-15 mb-5" id="count-gateways">2</h2>
+                      <i
+                        class="fa fa-cloud text-blue-400 counter-icon"
+                        style="top: 28px"
+                      ></i>
+                      <div>Gateways</div>
+                      <div class="text-size-small text-muted"></div>
                     </div>
-
-                    <div class="col-md-4">
-
-                        <!-- Productivity goal -->
-                        <div class="panel text-center">
-                            <div class="panel-body">
-                                <div class="heading-elements">
-                                    <ul class="icons-list">
-                                        <li class="dropdown text-muted">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-cog3"></i> <span class="caret"></span></a>
-                                            <ul class="dropdown-menu dropdown-menu-right">
-                                                <li><a href="#"><i class="icon-sync"></i> Update data</a></li>
-                                                <li><a href="#"><i class="icon-list-unordered"></i> Detailed log</a></li>
-                                                <li><a href="#"><i class="icon-pie5"></i> Statistics</a></li>
-                                                <li><a href="#"><i class="icon-cross3"></i> Clear list</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!-- Progress counter -->
-                                <div class="content-group-sm svg-center position-relative" id="hours-available-progress">
-                                    <svg width="76" height="76"></svg>
-                                    <h2 class="mt-15 mb-5" id="count-nodes">2</h2>
-                                    <i class="fa fa-wifi text-blue-400 counter-icon" style="top: 22px"></i>
-                                    <div>Nodos</div>
-                                    <div class="text-size-small text-muted"></div>
-                                </div>
-                                <!-- /progress counter -->
-
-                            </div>
-                        </div>
-                        <!-- /productivity goal -->
-
-                    </div>
-                    <div class="col-md-4">
-
-                        <!-- Available hours -->
-                        <div class="panel text-center">
-                            <div class="panel-body">
-                                <div class="heading-elements">
-                                    <ul class="icons-list">
-                                        <li class="dropdown text-muted">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-cog3"></i> <span class="caret"></span></a>
-                                            <ul class="dropdown-menu dropdown-menu-right">
-                                                <li><a href="#"><i class="icon-sync"></i> Update data</a></li>
-                                                <li><a href="#"><i class="icon-list-unordered"></i> Detailed log</a></li>
-                                                <li><a href="#"><i class="icon-pie5"></i> Statistics</a></li>
-                                                <li><a href="#"><i class="icon-cross3"></i> Clear list</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!-- Progress counter -->
-                                <div class="content-group-sm svg-center position-relative" id="hours-available-progress">
-                                    <svg width="76" height="76"></svg>
-                                    <h2 class="mt-15 mb-5" id="count-registers">2</h2>
-                                    <i class="fa fa-database text-blue-400 counter-icon" style="top: 22px"></i>
-                                    <div>Registros</div>
-                                    <div class="text-size-small text-muted"></div>
-                                </div>
-                                <!-- /progress counter -->
-
-                            </div>
-                        </div>
-                        <!-- /available hours -->
-
-                    </div>
+                    <!-- /progress counter -->
+                  </div>
                 </div>
-                <div class="row">
-                    <div class="panel panel-flat">
-                        <div class="panel-heading">
-                            <h5 class="panel-title" id="device-title">Nombre Gateway</h5>
-                            <div class="heading-elements">
-                                <ul class="icons-list">
-                                    <li><a data-action="collapse"></a></li>
-                                    <li><a data-action="reload"></a></li>
-                                    <li><a data-action="close"></a></li>
-                                </ul>
-                            </div>
-                        </div>
+                <!-- /available hours -->
+              </div>
 
-                        <div class="panel-body">
-
-                            <div class="row">
-                                <p>Añadir la posicion del dispositivo en el mapa haciendo click en el lugar deseado</p>
-                                <button type="button" class="btn btn-info btn-labeled btn-lg legitRipple"  onclick="clearMarkers();"><b><i class="icon-pin-alt"></i></b> Ocultar</button>
-                                <button type="button" class="btn btn-danger btn-labeled btn-lg legitRipple" onclick="showMarkers();" ><b><i class="icon-pin-alt"></i></b> Mostrar</button>
-                                <button type="button" class="btn btn-danger btn-labeled btn-lg legitRipple" onclick="deleteMarkers();"><b><i class="icon-pin-alt"></i></b> Eliminar Posicion</button>
-                            </div>
-                            <div class="row mt-5 pl-10 pr-10" id="map" style="min-height: 400px;">
-                                <p>Loading map...</p>
-                            </div>
-                        </div>
+              <div class="col-md-4">
+                <!-- Productivity goal -->
+                <div class="panel text-center">
+                  <div class="panel-body">
+                    <div
+                      class="content-group-sm svg-center position-relative"
+                      id="hours-available-progress"
+                    >
+                      <svg width="76" height="76"></svg>
+                      <h2 class="mt-15 mb-5" id="count-nodes">2</h2>
+                      <i
+                        class="fa fa-wifi text-blue-400 counter-icon"
+                        style="top: 22px"
+                      ></i>
+                      <div>Nodos</div>
+                      <div class="text-size-small text-muted"></div>
                     </div>
+                    <!-- /progress counter -->
+                  </div>
                 </div>
-
-                <!-- Vertical form modal -->
-                <div id="modal_form_edit" class="modal fade">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h5 class="modal-title">Formulario</h5>
-                            </div>
-
-                            <form action="#" id="edit-gateway">
-                                <div class="modal-body">
-                                    <div class="col-md-6">
-                                        <div class="form-group has-feedback has-feedback-left">
-                                            <input type="text" name="nombre" id="nombre-dispositivo" class="form-control input-sm" placeholder="Nombre Dispositivo">
-                                            <input type="hidden" id="id" name="id" value="1">
-                                            <input type="hidden" id="edit_gw_id" name="gw_id" value="" />
-                                            <input type="hidden" id="src" name="src" value="" />
-                                            <div class="form-control-feedback">
-                                                <i class="icon-pencil"></i>
-                                            </div>
-                                            <span class="label-block label label-success text-left">Nombre</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group has-feedback has-feedback-left">
-                                            <input type="text" name="freq" id="freq" class="form-control input-sm" placeholder="frecuencia">
-                                            <div class="form-control-feedback">
-                                                <i class="icon-pin-alt"></i>
-                                            </div>
-                                            <span class="label-block label label-success text-left">Frecuencia</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group has-feedback has-feedback-left">
-                                            <input type="text" name="lat" id="lat" class="form-control input-sm" placeholder="Lat">
-                                            <div class="form-control-feedback">
-                                                <i class="icon-pin-alt"></i>
-                                            </div>
-                                            <span class="label-block label label-success text-left">Latitud</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group has-feedback has-feedback-left">
-                                            <input type="text" name="long" id="long" class="form-control input-sm" placeholder="Long">
-                                            <div class="form-control-feedback">
-                                                <i class="icon-pin-alt"></i>
-                                            </div>
-                                            <span class="label-block label label-success text-left">Longitud</span>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-link" data-dismiss="modal">Cancelar</button>
-                                    <button type="submit" class="btn bg-teal"><span class="ladda-label">Guardar</span></button>
-                                </div>
-                            </form>
-                        </div>
+                <!-- /productivity goal -->
+              </div>
+              <div class="col-md-4">
+                <!-- Available hours -->
+                <div class="panel text-center">
+                  <div class="panel-body">
+                    <!-- Progress counter -->
+                    <div
+                      class="content-group-sm svg-center position-relative"
+                      id="hours-available-progress"
+                    >
+                      <svg width="76" height="76"></svg>
+                      <h2 class="mt-15 mb-5" id="count-registers">2</h2>
+                      <i
+                        class="fa fa-database text-blue-400 counter-icon"
+                        style="top: 22px"
+                      ></i>
+                      <div>Registros</div>
+                      <div class="text-size-small text-muted"></div>
                     </div>
+                    <!-- /progress counter -->
+                  </div>
                 </div>
-                <!-- /vertical form modal -->
-
+                <!-- /available hours -->
+              </div>
             </div>
-            <!-- /content area -->
+            <div class="row">
+              <div class="panel panel-flat">
+                <div class="panel-heading">
+                  <h5 class="panel-title" id="device-title">Nombre Gateway</h5>
+                  <div class="heading-elements">
+                    <ul class="icons-list">
+                      <li><a data-action="collapse"></a></li>
+                      <li><a data-action="reload"></a></li>
+                      <li><a data-action="close"></a></li>
+                    </ul>
+                  </div>
+                </div>
 
+                <div class="panel-body">
+                  <div class="row" id="maps-options"></div>
+                  <div
+                    class="row mt-5 pl-10 pr-10"
+                    id="map"
+                    style="min-height: 400px;"
+                  >
+                    <p>Loading map...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vertical form modal -->
+            <div id="modal_form_edit" class="modal fade">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <h5 class="modal-title">Formulario</h5>
+                  </div>
+
+                  <form action="#" id="edit-gateway">
+                    <div class="modal-body">
+                      <div class="col-md-6">
+                        <div class="form-group has-feedback has-feedback-left">
+                          <input
+                            type="text"
+                            name="nombre"
+                            id="nombre-dispositivo"
+                            class="form-control input-sm"
+                            placeholder="Nombre Dispositivo"
+                          />
+                          <input type="hidden" id="id" name="id" value="1" />
+                          <input
+                            type="hidden"
+                            id="edit_gw_id"
+                            name="gw_id"
+                            value=""
+                          />
+                          <input type="hidden" id="src" name="src" value="" />
+                          <div class="form-control-feedback">
+                            <i class="icon-pencil"></i>
+                          </div>
+                          <span
+                            class="label-block label label-success text-left"
+                            >Nombre</span
+                          >
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group has-feedback has-feedback-left">
+                          <input
+                            type="text"
+                            name="freq"
+                            id="freq"
+                            class="form-control input-sm"
+                            placeholder="frecuencia"
+                          />
+                          <div class="form-control-feedback">
+                            <i class="icon-pin-alt"></i>
+                          </div>
+                          <span
+                            class="label-block label label-success text-left"
+                            >Frecuencia</span
+                          >
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group has-feedback has-feedback-left">
+                          <input
+                            type="text"
+                            name="lat"
+                            id="lat"
+                            class="form-control input-sm"
+                            placeholder="Lat"
+                          />
+                          <div class="form-control-feedback">
+                            <i class="icon-pin-alt"></i>
+                          </div>
+                          <span
+                            class="label-block label label-success text-left"
+                            >Latitud</span
+                          >
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group has-feedback has-feedback-left">
+                          <input
+                            type="text"
+                            name="long"
+                            id="long"
+                            class="form-control input-sm"
+                            placeholder="Long"
+                          />
+                          <div class="form-control-feedback">
+                            <i class="icon-pin-alt"></i>
+                          </div>
+                          <span
+                            class="label-block label label-success text-left"
+                            >Longitud</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-link"
+                        data-dismiss="modal"
+                      >
+                        Cancelar
+                      </button>
+                      <button type="submit" class="btn bg-teal">
+                        <span class="ladda-label">Guardar</span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /vertical form modal -->
+          </div>
+          <!-- /content area -->
         </div>
         <!-- /main content -->
-
+      </div>
+      <!-- /page content -->
     </div>
-    <!-- /page content -->
-
-</div>
-<!-- /page container -->
-<script src="assets/js/scripts.js" type="text/javascript"></script>
-<script async defer src="" type="text/javascript"></script>
-
-<h1></h1>
-
-</body>
+    <!-- /page container -->
+    <script src="assets/js/scripts.js" type="text/javascript"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDP07qiZs0iibYbUJ4GmNkYcGw4RQcg71s&callback=initMap"
+      type="text/javascript"
+    ></script>
+    <script></script>
+    <h1></h1>
+  </body>
 </html>
