@@ -196,9 +196,19 @@ function initMap() {
     }
   });
 
+  var urlGateways = "";
+
+  if (localStorage.api_token) {
+    urlGateways =
+      "http://localhost/tesis_api/public/gateway-editable?api_token=" +
+      localStorage.api_token;
+  } else {
+    urlGateways = "http://localhost/tesis_api/public/gateway";
+  }
+
   //get all gateways position
   $.ajax({
-    url: "http://localhost/tesis_api/public/gateway",
+    url: urlGateways,
     type: "GET",
     beforeSend: function(xhr) {
       if (localStorage.api_token) {
@@ -225,25 +235,7 @@ function initMap() {
           animation: google.maps.Animation.DROP,
           map: map
         });
-        var content =
-          "<p><h5><b>" +
-          gateways[i].nombre +
-          "</b></h5></p>" +
-          "<p>Frecuencia: " +
-          gateways[i].freq +
-          "</p>" +
-          '<input type="hidden" id="nodo_id" value="' +
-          gateways[i].id +
-          '" />' +
-          '<input type="hidden" id="gw_id" value="' +
-          gateways[i].gw_id +
-          '" />' +
-          '<input type="hidden" id="tipo_nodo" value="gateway" />' +
-          '<p><i class="glyphicon glyphicon-eye-open"></i><a href="./gateway/' +
-          gateways[i].id +
-          '"> Ver</a></p>' +
-          '<p><button type="button" class="btn btn-info btn-labeled btn-lg legitRipple"  data-toggle="modal" data-target="#modal_form_edit"><b><i class="glyphicon glyphicon-pencil"></i></b> Editar</button></p>' +
-          '<p><button type="button" class="btn btn-danger btn-labeled btn-lg legitRipple"  onclick="clearMarkers();"><b><i class="glyphicon glyphicon-remove"></i></b> Eliminar</button></p>';
+        var content = gateways[i].formEditar; //obtiene el formulario de edicion
 
         var infowindow = new google.maps.InfoWindow();
 
@@ -564,23 +556,35 @@ $("#test").click(function() {
 });
 
 //---------LOGIN FUNCTIONS ------------------------
-$("#main-navbar").load("main_navbar.html");
+$("#main-navbar").load("includes/main_navbar.html");
 $(document).ready(function() {
   //profile
-  if (window.location.href.indexOf("index.html") > -1) {
+  if (
+    window.location.href.indexOf("index.html") > -1 ||
+    window.location.href.indexOf("gateways.html") > -1 ||
+    window.location.href.indexOf("editar_gateway.html") > -1 ||
+    window.location.href.indexOf("nodo.html") > -1 ||
+    window.location.href.indexOf("lista_nodos.html") > -1
+  ) {
     //si esta logeado el usuario
+    alert("logeado");
     if (localStorage.api_token && localStorage.user) {
-      $("#main-sidebar").load("main_sidebar.html");
-      $("#maps-options").load("maps_options.html");
+      $("#main-sidebar").load("includes/main_sidebar.html");
+      // $("#maps-options").load("includes/maps_options.html");
       setTimeout(function() {
         $("#user-login").hide();
         $("#user-menu").show();
         $("#user-name").html(localStorage.user);
       }, 100);
     } else {
+      //si no esta logueado y no esta en el index, es redireccionado a este
+      if (window.location.href.indexOf("index.html") === -1) {
+        window.location = "index.html";
+      }
       setTimeout(function() {
         $("#user-menu").hide();
-      }, 100);
+        $("#main-sidebar").hide();
+      }, 50);
     }
   }
 

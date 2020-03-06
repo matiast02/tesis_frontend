@@ -1,7 +1,10 @@
 // cargar datatable en pagina gateways
 $(document).ready(function() {
   $.ajax({
-    url: "http://localhost/tesis_api/public/gateway/datatables",
+    url:
+      "http://localhost/tesis_api/public/gateway/datatables?api_token=" +
+      localStorage.api_token,
+
     type: "GET",
     success: function(data) {
       console.log(data);
@@ -38,7 +41,9 @@ $(document).ready(function() {
             '                                            <ul class="dropdown-menu dropdown-menu-right">\n' +
             '                                                <li><a href="#"><i class="icon-eye"></i> Ver</a></li>\n' +
             '                                                <li class="divider"></li>\n' +
-            '                                                <li><a href="#"><i class="icon-pencil7"></i> Editar</a></li>\n' +
+            '                                                <li><a href="editar_gateway.html?id=' +
+            gateway.id +
+            '"><i class="icon-pencil7"></i> Editar</a></li>\n' +
             '                                                <li><a href="#"><i class="icon-cross2"></i> Eliminar</a></li>\n' +
             "                                            </ul>\n" +
             "                                        </li>\n" +
@@ -57,4 +62,6 @@ $(document).ready(function() {
       });
     }
   });
+
+  //------------------------editar gateway
 });

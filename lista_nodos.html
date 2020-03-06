@@ -33,40 +33,7 @@
 <body>
 
 <!-- Main navbar -->
-<div class="navbar navbar-default header-highlight">
-    <div class="navbar-header">
-        <a class="navbar-brand" href="index.html">PORYECTO DE GRADO</a>
-
-        <ul class="nav navbar-nav visible-xs-block">
-            <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
-            <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
-        </ul>
-    </div>
-
-    <div class="navbar-collapse collapse" id="navbar-mobile">
-        <ul class="nav navbar-nav">
-            <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
-        </ul>
-
-        <ul class="nav navbar-nav navbar-right">
-
-
-            <li class="dropdown dropdown-user">
-                <a class="dropdown-toggle" data-toggle="dropdown">
-                    <img src="assets/images/image.png" alt="">
-                    <span>Admin</span>
-                    <i class="caret"></i>
-                </a>
-
-                <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="#"><i class="icon-user-plus"></i> Mi perfil</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#"><i class="icon-switch2"></i> Salir</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</div>
+<div class="navbar navbar-default header-highlight bg-green-400" id="main-navbar"></div>
 <!-- /main navbar -->
 
 
@@ -77,40 +44,7 @@
     <div class="page-content">
 
         <!-- Main sidebar -->
-        <div class="sidebar sidebar-main">
-            <div class="sidebar-content">
-
-
-                <!-- Main navigation -->
-                <div class="sidebar-category sidebar-category-visible">
-                    <div class="category-content no-padding">
-                        <ul class="navigation navigation-main navigation-accordion">
-
-                            <!-- Main -->
-                            <li class="navigation-header"><span>Menu</span> <i class="icon-menu" title="Main pages"></i></li>
-                            <li class="active"><a href="index.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
-                            <li>
-                                <a href="#"><i class="icon-stack"></i> <span>Gateways</span></a>
-                                <ul>
-                                    <li><a href="gateways.html">Lista</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icon-stack"></i> <span>Nodos</span></a>
-                                <ul>
-                                    <li><a href="lista_nodos.html">Lista</a></li>
-
-                                </ul>
-                            </li>
-                            <!-- /main -->
-
-                        </ul>
-                    </div>
-                </div>
-                <!-- /main navigation -->
-
-            </div>
-        </div>
+        <div class="sidebar sidebar-main" id="main-sidebar"></div>
         <!-- /main sidebar -->
 
 
@@ -173,9 +107,10 @@
 
 </div>
 <!-- /page container -->
+<script src="assets/js/scripts.js" type="text/javascript"></script>
 <script>
     $.ajax({
-  url: "http://localhost/tesis_api/public/nodos/datatables",
+  url: "http://localhost/tesis_api/public/nodos/datatables?api_token=" + localStorage.api_token,
   type: "GET",
   success: function(data) {
     console.log(data);

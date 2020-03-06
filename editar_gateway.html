@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proyecto de Grado - Terradas, Matias</title>
+
+<!-- Global stylesheets -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+<link href="assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+<!-- /global stylesheets -->
+<!-- Core JS files -->
+<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+<script type="text/javascript" src="assets/js/core/app.js"></script>
+<script type="text/javascript" src="assets/js/plugins/notifications/sweet_alert.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/velocity/velocity.ui.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
+
+<script type="text/javascript" src="assets/js/plugins/ui/ripple.min.js"></script>
+<!-- /theme JS files -->
+
+</head>
+<body>
+
+<!-- Main navbar -->
+<div class="navbar navbar-default header-highlight" id="main-navbar"></div>
+<!-- /main navbar -->
+
+
+<!-- Page container -->
+<div class="page-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-main" id="main-sidebar"></div>
+        <!-- /main sidebar -->
+
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Page header -->
+            <div class="page-header">
+                <div class="page-header-content">
+                    <div class="page-title">
+                        <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Editar</span> - Gateway</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- /page header -->
+
+
+            <!-- Content area -->
+            <div class="content">
+                <div class="row">
+                    <div class="panel panel-white">
+                        <div class="panel-heading">
+                            <h6 class="panel-title">Gateways<a class="heading-elements-toggle"><i class="icon-more"></i></a></h6>
+                            <div class="heading-elements">
+                                <ul class="icons-list">
+                                    <li><a data-action="collapse"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+                            <form action="#" id="edit-gateway">
+                                <div class="modal-body">
+                                  <div class="col-md-3">
+                                    <div class="form-group has-feedback has-feedback-left">
+                                      <input
+                                        type="text"
+                                        name="nombre"
+                                        id="nombre-dispositivo"
+                                        class="form-control input-sm"
+                                        placeholder="Nombre Dispositivo"
+                                      />
+                                      <input type="hidden" id="id" name="id" value="" />
+                                      <div class="form-control-feedback">
+                                        <i class="icon-pencil"></i>
+                                      </div>
+                                      <span
+                                        class="label-block label label-success text-left"
+                                        >Nombre</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <div class="form-group has-feedback has-feedback-left">
+                                      <input
+                                        type="text"
+                                        name="freq"
+                                        id="freq"
+                                        class="form-control input-sm"
+                                        placeholder="frecuencia"
+                                      />
+                                      <div class="form-control-feedback">
+                                        <i class="icon-pin-alt"></i>
+                                      </div>
+                                      <span
+                                        class="label-block label label-success text-left"
+                                        >Frecuencia</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <div class="form-group has-feedback has-feedback-left">
+                                      <input
+                                        type="text"
+                                        name="lat"
+                                        id="lat"
+                                        class="form-control input-sm"
+                                        placeholder="Lat"
+                                      />
+                                      <div class="form-control-feedback">
+                                        <i class="icon-pin-alt"></i>
+                                      </div>
+                                      <span
+                                        class="label-block label label-success text-left"
+                                        >Latitud</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <div class="form-group has-feedback has-feedback-left">
+                                      <input
+                                        type="text"
+                                        name="long"
+                                        id="long"
+                                        class="form-control input-sm"
+                                        placeholder="Long"
+                                      />
+                                      <div class="form-control-feedback">
+                                        <i class="icon-pin-alt"></i>
+                                      </div>
+                                      <span
+                                        class="label-block label label-success text-left"
+                                        >Longitud</span
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+            
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-link"
+                                    data-dismiss="modal"
+                                  >
+                                    Cancelar
+                                  </button>
+                                  <button type="submit" class="btn bg-teal">
+                                    <span class="ladda-label">Guardar</span>
+                                  </button>
+                                </div>
+                              </form>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-white">
+                            <div class="panel-heading">
+                                <h6 class="panel-title">Mapa<a class="heading-elements-toggle"><i class="icon-more"></i></a></h6>
+                                <div class="heading-elements">
+                                    <ul class="icons-list">
+                                        <li><a data-action="collapse"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row mt-5 pl-10 pr-10" id="map" style="min-height: 400px;">
+                                    <p>Loading map...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   <div class="col-md-4">
+                    <div class="panel panel-white">
+                        <div class="panel-heading">
+                            <h6 class="panel-title">Nodos Sensores<a class="heading-elements-toggle"><i class="icon-more"></i></a></h6>
+                            <div class="heading-elements">
+                                <ul class="icons-list">
+                                    <li><a data-action="collapse"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <h3>Sensores conectados <span id="cantidad-nodos"></span></h3>
+                            <ul class="media-list lista-nodos-sensores"> 
+
+                            </ul>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+
+
+
+                <!-- Footer -->
+                <div class="footer text-muted">
+
+                </div>
+                <!-- /footer -->
+
+            </div>
+            <!-- /content area -->
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</div>
+<!-- /page container -->
+<script src="assets/js/scripts.js" type="text/javascript"></script>
+<script src="assets/js/gateways.js" type="text/javascript"></script>
+<script
+async
+defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDP07qiZs0iibYbUJ4GmNkYcGw4RQcg71s&callback=initMap"
+type="text/javascript"
+></script>
+<script>
+  let searchParams = new URLSearchParams(window.location.search);
+
+if (searchParams.has("id")) {
+  let gatewayId = searchParams.get("id");
+
+ 
+  $.ajax({
+    url: "http://localhost/tesis_api/public/gateway/" + gatewayId,
+    type: "GET",
+    data: $(this).serialize(),
+    success: function(data) {
+      //  swal({ title: "Listo", type: "success", text: "Datos actualizados!" });
+      $("#id").val(data.gateway.id);
+      $("#nombre-dispositivo").val(data.gateway.nombre);
+      $("#freq").val(data.gateway.freq);
+      $("#lat").val(data.gateway.lat);
+      $("#long").val(data.gateway.long);
+      $("#cantidad-nodos").text(data.gateway.nodos.length);
+      let nodos = data.gateway.nodos;
+      console.log(data);
+      //load nodo sensores
+      for (let index = 0; index < nodos.length; index++) {        
+        //$(".lista-nodos-sensores").append("<li class='media'><img src='assets/images/markers/nodo.png' /><div class='media-body'>"+ nodos[index].nombre +"</div></li>");
+        $(".lista-nodos-sensores").append("<li class='media'><h5><img src='assets/images/markers/nodo.png' height='25' /><b>"+ (index + 1)  +" - </b><span class='text-bold'>"+ nodos[index].nombre +"</span></h5></li>");
+      }
+    },
+    error: function(data) {
+      var errors = data.responseJSON;
+      var err = [];
+      $.each(errors, function(key, val) {
+        err.push(val);
+        console.log(val);
+      });
+      swal("Oops...", err, "error");
+    }
+  });
+}
+</script>
+</body>
+</html>
